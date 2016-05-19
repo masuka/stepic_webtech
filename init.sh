@@ -7,5 +7,6 @@ sudo /etc/init.d/nginx restart
 
 
 # Set up for gunicorn
-sudo ln -s /home/box/web/etc/gunicorn.conf /etc/gunicorn.d/test.conf
+sudo ln -s /home/box/web/etc/gunicorn_hello.conf /etc/gunicorn.d/hello.conf  # hello wsgi app
+sudo ln -s /home/box/web/etc/gunicorn.conf /etc/gunicorn.d/ask.conf  # django app
 sudo /etc/init.d/gunicorn restart
