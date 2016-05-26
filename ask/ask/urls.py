@@ -20,5 +20,10 @@ from django.contrib import admin
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^question/', include('qa.urls')),
-    url(r'^$', lambda request: HttpResponse('OK'))
+    url(r'^$', lambda request: HttpResponse('OK')),
+    url(r'^login/$', lambda request: HttpResponse('OK')),
+    url(r'^signup/$', lambda request: HttpResponse('OK')),
+    url(r'^ask/$', lambda request: HttpResponse('OK')),
+    url(r'^popular/$', lambda request: HttpResponse('OK')),
+    url(r'^new/$', lambda request: HttpResponse('OK')),
 ]
